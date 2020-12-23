@@ -19,8 +19,8 @@ package org.nervousync.cache.provider.impl.jedis;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.nervousync.cache.annotation.CacheProviderImpl;
-import org.nervousync.cache.provider.impl.AbstractCacheProvider;
+import org.nervousync.cache.annotation.CacheProvider;
+import org.nervousync.cache.provider.impl.AbstractProvider;
 import org.nervousync.commons.beans.xml.cache.CacheServer;
 import org.nervousync.commons.core.Globals;
 import org.nervousync.utils.ConvertUtils;
@@ -36,8 +36,8 @@ import redis.clients.jedis.ShardedJedisPool;
  * @author Steven Wee	<a href="mailto:wmkm0113@Hotmail.com">wmkm0113@Hotmail.com</a>
  * @version $Revision: 1.0 $ $Date: Apr 25, 2017 4:36:52 PM $
  */
-@CacheProviderImpl(name = "JedisProvider", defaultPort = 6379)
-public final class JedisProviderImpl extends AbstractCacheProvider {
+@CacheProvider(name = "JedisProvider", defaultPort = 6379)
+public final class JedisProviderImpl extends AbstractProvider {
 
 	/**
 	 * Is single server mode
