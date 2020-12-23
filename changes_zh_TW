@@ -1,0 +1,3 @@
+Nervousync 緩存適配器 Jedis
+[12/23/2020]
+使用 jedis version 3.3.0 實現緩存適配器
